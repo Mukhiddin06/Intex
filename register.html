@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style>
+    
+</head>
+<body class="register-body">
+    
+    <div class="fixed top-0 bottom-0 left-0 right-0 m-auto rounded-[25px] w-[621px] h-[519px] bg-white pt-[45px] pb-[46px] text-center">
+        <img class="mx-auto" src="./Images/Intex-market.uz.svg" alt="Intex-market" width="421" height="72">
+        <h2 class="font-trebuchet font-bold text-[25px] leading-[29px] text-[#A3A3A3] mt-[25px] mb-[55px]">Введите имя пользователя и пароль, чтобы получить доступ к системе.</h2>
+        <form class="register-form flex flex-col items-center">
+            <input autocomplete="off" class="w-[359px] rounded-[17px] py-[12.5px] outline-none focus:shadow-[#3F8C8E] text-center border-[1px] border-[#CBCBCB] font-trebuchet font-bold text-[25px] shadow-inputShadow mb-[17px]" type="text" name="username" placeholder="Новый имя">
+            <input autocomplete="off" class="w-[359px] rounded-[17px] py-[12.5px] outline-none focus:shadow-[#3F8C8E] text-center border-[1px] border-[#CBCBCB] font-trebuchet font-bold text-[25px] shadow-inputShadow" type="password" name="password" placeholder="Новый пароль">
+            <button type="submit" class="w-[300px] mt-[40px] rounded-[10px] text-[25px] leading-[29px] text-center text-white font-bold font-trebuchet bg-[#3F8C8E] py-[8px]">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    
+
+
+    <script src="./js/Admin/register.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily: {
+                'sans': ['Source Sans Pro', 'sans-serif'],
+                'trebuchet': ['Trebuchet MS', 'sans-serif'],
+              },
+              boxShadow: {
+                'inputShadow': '0px 0px 7px 0px #00000040',
+              }
+            }
+          }
+        }
+    </script>
+</body>
+</html>

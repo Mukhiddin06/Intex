@@ -1,0 +1,15 @@
+
+.login-body{
+    background-image: url("../Images/login-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+}
+.register-body{
+    background-image: url("../Images/sign-up-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+}
